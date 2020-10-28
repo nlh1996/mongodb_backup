@@ -19,3 +19,5 @@ DATA=`date +"%Y-%m-%d %H-%M-%S"`
 BAK_FILE_NAME="${DATA}_${DB_NAME}"
 
 mongodump --host $DB_HOST --port $DB_PORT -d $DB_NAME --username $DB_USER --password $DB_PWD -o "${BACK_UP_DIR}/${BAK_FILE_NAME}"
+
+## 如果备份数据较大 可以使用压缩指令
